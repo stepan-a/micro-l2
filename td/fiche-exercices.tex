@@ -1,0 +1,77 @@
+\documentclass[10pt,a4paper,notitlepage]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{bbm}
+\usepackage{float}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{enumerate}
+
+%\usepackage{palatino}
+
+ \usepackage[active]{srcltx}
+\usepackage{scrtime}
+
+\newcounter{xnumber}
+\setcounter{xnumber}{0}
+
+\newcommand{\exercice}{\textsc{\textbf{Exercice}} \textbf{\addtocounter{xnumber}{1}\thexnumber}\,\,}
+\newcommand{\question}[1]{\textbf{(#1)}}
+\setlength{\parindent}{0cm}
+
+\begin{document}
+
+\title{\textsc{Microéconomie\\ \small{(Exercices)}}}
+\author{Stéphane Adjemian\thanks{Université du Mans. \texttt{stephane DOT adjemian AT univ DASH lemans DOT fr}}}
+\date{Le \today\ à \thistime}
+
+\maketitle
+
+\exercice On suppose que les préférences d'un ménage sont représentées par la fonction d'utilité Cobb-Douglas~:
+\[
+u(x) = x^{\alpha}
+\]
+avec $0<\alpha<1$, où $x$ est la quantité de bien consommé. Pour chaque unité du bien demandée, le ménage doit payer $p>0$. Le ménage dispose d'un revenu $R$. \question{1} Quelle est la fonction de demande associée à cette fonction d'utilité~? On notera la fonction de demande $D(p)$. \question{2} Calculer l'élasticité, $\epsilon(p)$, de la demande (par rapport au prix). Discuter la forme de la fonction et l'effet d'une variation du paramètre $\alpha$ en interprétant ce paramètre par rapport à l'utilité marginale. \question{3} Calculer le surplus du consommateur, $\Psi(\bar p)$, Représenter le surplus graphiquement en considérant le cas $\alpha=\frac{1}{2}$.\newline
+
+\bigskip
+
+\exercice On suppose que les préférences d'un ménage sont représentées par la fonction d'utilité quadratique~:
+\[
+u(x) =
+\begin{cases}
+  x(a-x) & \text{si }x\leq\frac{a}{2}\\
+  \frac{a^2}{4} & \text{sinon.}
+\end{cases}
+\]
+avec $a>0$, où $x$ est la quantité de bien consommé. Pour chaque unité du bien demandée, le ménage doit payer $p>0$. Le ménage dispose d'un revenu $R$. \question{1} Calculer l'utilité marginale et justifier la forme de la fonction d'utilité. Est-il possible d'écrire cette fonction de façon plus synthétique~? \question{2} Déterminer la fonction de demande, $D(p)$, exrimée par le ménage. Proposer une interprétation du paramètre $a$. \question{3} Calculer l'éasticité prix de la demande. Discuter ses propriétés et donner une représentation graphique (avec $a=1$). \question{4} Calculer le surplus du ménage, $\Psi(\bar p)$, puis donner une représentation graphique.\newline
+
+\bigskip
+
+\exercice On suppose que les préférences d'un ménage sont représentées par la fonction d'utilité logarithmique~:
+\[
+u(x) = \beta\log (1+x)
+\]
+avec $\beta>0$, où $x$ est la quantité de bien consommé. Pour chaque unité du bien demandée, le ménage doit payer $p>0$. Le ménage dispose d'un revenu $R$. \question{1} Déterminer la demande (non négative) exprimée par le ménage. On notera $D(p)$ la fonction de demande. Donner une interprétation au paramètre $\beta$. \question{2} Calculer l'élasticité prix de la demande, $\epsilon(p)$, discuter ses propriétés et Représenter graphiquement l'élasticité (en posant $\beta=1$). \question{3} Calculer le surplus du consommateur, $\Psi(\bar p)$, puis donner une représentation graphique.\newline
+
+\bigskip
+
+\exercice On suppose que les préférences d'un ménage sont représentées par la fonction d'utilité exponentielle~:
+\[
+u(x) = -e^{-\gamma x}
+\]
+avec $\gamma>0$, où $x$ est la quantité de bien consommé. Pour chaque unité du bien demandée, le ménage doit payer $p>0$. Le ménage dispose d'un revenu $R$. \question{1} Déterminer la demande (non négative) exprimée par le ménage. On notera $D(p)$ la fonction de demande. Donner une interprétation au paramètre $\gamma$. \question{2} Calculer l'élasticité prix de la demande, $\epsilon(p)$, discuter ses propriétés et représenter graphiquement l'élasticité (en posant $\gamma=1$). \question{3} Calculer le surplus du consommateur, $\Psi(\bar p)$, puis donner une représentation graphique.\newline
+
+
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+
+% 05 68 et 05 69
+
+
+0948*, 0949*, 0162*, 0163*, 0270*, 0271*, 0377*, 0378*, 0424*, 0425*, 0568*, 0569*
