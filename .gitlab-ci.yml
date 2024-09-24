@@ -1,0 +1,17 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  TERM: linux
+  GIT_STRATEGY: clone
+
+micro:
+  stage: build
+  only:
+    - master@stephane/micro-l2
+  script:
+    - make -C td
+    - scp td/fiche-exercices.pdf /home/www/le-mans.adjemian.eu/micro-l2
+  artifacts:
+    paths:
+      - td/fiche-exercices.pdf
+  tags:
+    - stepan@puck
