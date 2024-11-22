@@ -1,0 +1,10 @@
+[[https://mnemosyne.ithaca.fr/stephane/micro-l2/badges/master/pipeline.svg]]
+#+html:<div align="center">
+* Cours de Microéconomie
+   (Le Mans, L2)
+#+html:</div>
+
+\\
+
+ - [[https://le-mans.adjemian.eu/micro-l2/fiche-exercices.pdf][Fiche d'exercices]]
+ - Éléments de correction (notes manuscrites à lire avec prudence) : [[https://le-mans.adjemian.eu/micro-l2/correction-td-micro-2024-09-23.pdf][tome 1]], [[https://le-mans.adjemian.eu/micro-l2/correction-td-micro-2024-09-29.pdf][tome 2]], [[https://le-mans.adjemian.eu/micro-l2/correction-td-micro-2024-10-19.pdf][tome 3]], [[https://le-mans.adjemian.eu/micro-l2/correction-td-micro-2024-11-22.pdf][tome 4]].
