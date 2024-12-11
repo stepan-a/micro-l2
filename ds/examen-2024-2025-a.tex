@@ -1,0 +1,95 @@
+\documentclass[10pt,a4paper,notitlepage,twocolumn]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{bbm}
+\usepackage{float}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage[active]{srcltx}
+\usepackage{scrtime}
+
+\newcounter{xnumber}
+\setcounter{xnumber}{0}
+
+\newcommand{\exercice}{\textsc{\textbf{Exercice}}
+\textbf{\addtocounter{xnumber}{1}\thexnumber}\,\,}
+\newcommand{\question}[1]{\textbf{(#1)}}
+\setlength{\parindent}{0cm}
+
+\begin{document}
+
+\title{\textsc{Microéconomie\\ \small{(L2, Le Mans)}}}
+\author{Stéphane Adjemian\thanks{Université du Mans. \texttt{stephane
+DOT adjemian AT univ DASH lemans DOT fr}}}
+\date{Mardi 17 décembre 2024}
+
+\maketitle
+
+\thispagestyle{empty}
+
+\bigskip
+
+\begin{quote}
+  \textit{Les réponses non commentées ou insuffisamment détaillées ne
+  seront pas considérées. Prenez le temps d'écrire des phrases.}
+\end{quote}
+
+\bigskip
+\bigskip
+
+\question{1} On suppose que les préférences d'un consommateur
+représentatif pour la consommation d'un bien sont caractérisées par~:
+\[
+  u(q) =
+  \begin{cases}
+    \left( a - \frac{1}{2}q \right)q &\text{ si } q\leq 1\\
+    \frac{a^2}{2} &\text{ sinon.}
+  \end{cases}
+\]
+où $q$ est la quantité de bien consommée. Calculer l'utilité
+marginale et justifier la forme de la fonction d'utilité.\newline
+
+\question{2} On suppose que le consommateur dispose d'un revenu $R>0$
+et que le prix unitaire du bien est $p>0$. Déterminer la fonction de
+demande inverse, notée $P(q)$, puis la représenter
+graphiquement. Montrer que la fonction de demande est~:
+\[
+  D(p) = \max\left\{ a-p, 0 \right\}
+\]
+et la représenter graphiquement.\newline
+
+\question{3} Donner une interprétation au paramètre $a$.\newline
+
+\question{4} Le bien est produit par une entreprise dont la fonction
+de coût est linéaire~: $C(q) = c q$, avec $c>0$. Quelle hypothèse
+faut-il poser sur les paramètres $a$ et $c$~? Déterminer le prix et la
+quantité de bien échangée, notées $p^\star$ et $q^\star$, socialement
+optimal. Calculer le surplus des consommateurs, le profit des firmes
+et le bien être social.\newline
+
+\question{5} Supposons que la firme soit en situation de monopole sur
+le marché du bien. Écrire la condition du premier ordre de la
+firme. Expliquer pourquoi il ne serait pas optimal pour la firme de ne
+pas égaliser recette marginale et coût marginal.\newline
+
+\question{6} Déterminer la quantité produite par le
+monopole, $q^m$, et le prix unitaire du bien $p^m$. Montrer que le
+prix du monopole est supérieur au coût marginal et que la quantité
+échangée de bien est inférieure à l'optimum social.\newline
+
+\question{7} Calculer le surplus des consommateurs et le profit de la
+firme dans cet environnement. Déterminer le bien être social. Comparer
+avec l'optimum social. Quel problème pose la présence d'un monopole
+sur le marché~?\newline
+
+\question{8} Est-il possible pour la firme de rétablir l'optimum
+social sans proposer une tarification au coût marginal~?
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
