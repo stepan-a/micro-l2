@@ -9,9 +9,14 @@ micro:
     - master@stephane/micro-l2
   script:
     - make -C td
+    - make -C ds
     - scp td/fiche-exercices.pdf /home/www/le-mans.adjemian.eu/micro-l2
+    - scp ds/examen-2024-2025-a.pdf /home/www/le-mans.adjemian.eu/micro-l2
+    - scp ds/correction-2024-2025-a.pdf /home/www/le-mans.adjemian.eu/micro-l2
   artifacts:
     paths:
       - td/fiche-exercices.pdf
+      - ds/examen-2024-2025-a.pdf
+      - ds/correction-2024-2025-a.pdf
   tags:
     - stepan@puck

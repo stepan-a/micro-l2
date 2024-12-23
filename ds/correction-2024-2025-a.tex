@@ -1,0 +1,169 @@
+\documentclass[10pt,a4paper,notitlepage,twocolumn]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{bbm}
+\usepackage{float}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage[active]{srcltx}
+\usepackage{scrtime}
+
+\newcounter{xnumber}
+\setcounter{xnumber}{0}
+
+\newcommand{\exercice}{\textsc{\textbf{Exercice}}
+\textbf{\addtocounter{xnumber}{1}\thexnumber}\,\,}
+\newcommand{\question}[1]{\textbf{(#1)}}
+\setlength{\parindent}{0cm}
+
+\begin{document}
+
+\title{\textsc{Microéconomie\\ \small{(L2, Le Mans)}}}
+\author{Stéphane Adjemian\thanks{Université du Mans. \texttt{stephane
+DOT adjemian AT univ DASH lemans DOT fr}}}
+\date{Mardi 17 décembre 2024}
+
+\maketitle
+
+\thispagestyle{empty}
+
+\bigskip
+
+
+\bigskip
+\bigskip
+
+\question{1} On suppose que les préférences d'un consommateur
+représentatif pour la consommation d'un bien sont caractérisées par~:
+\[
+  u(q) =
+  \begin{cases}
+    \left( a - \frac{1}{2}q \right)q &\text{ si } q\leq a\\
+    \frac{a^2}{2} &\text{ sinon.}
+  \end{cases}
+\]
+où $q$ est la quantité de bien consommée. L'utilité marginale est~:
+\[
+  u'(q) =
+  \begin{cases}
+    a-q &\text{ si } q\leq a\\
+    0 &\text{ sinon.}
+  \end{cases}
+\]
+la définition avec une condition sur le niveau de $q$ assure que
+l'utilité marginale n'est jamais négative, c'est-à-dire que l'utilité
+ne décroît jamais lorsque la quantité consommée augmente.\newline
+
+\question{2} On suppose que le consommateur dispose d'un revenu $R>0$
+et que le prix unitaire du bien est $p>0$. Le consommateur maximise son utilité par rapport à l$q$a quantité de bien sous une contrainte budgétaire~:
+\[
+  \begin{split}
+    \max_{\{q\}} M + &\left(a-\frac{q}{2}\right)q \mathbb I_{\{q\leq a\}}(q) + \frac{a^2}{2}\mathbb I_{\{q> a\}}(q)\\
+    \underline{s.c}&\,\, M+pq = R
+  \end{split}
+\]
+où $M$ représente l'utilité obtenue par la consommation d'autres biens sur d'autres marchés. En substituant la contrainte dans l'objectif, un programme équivalent est~:
+\[
+    \max_{\{q\}} R-pq + \left(a-\frac{q}{2}\right)q \mathbb I_{\{q\leq a\}}(q) + \frac{a^2}{2}\mathbb I_{\{q> a\}}(q)
+\]
+La condition du premier ordre est~:
+\[
+  p =
+  \begin{cases}
+    a-q &\text{ si }q\leq a\\
+    0 &\text{ sinon.}
+  \end{cases}
+\]
+Il s'agit de la fonction de demande inverse $P(q)$. Pour une représentation graphique dans le plan $(q,p)$ il faut tracer une droite décroissante de pente $-1$ et d'ordonnée à l'origine $a$. On obtient directement la fonction de demande en inversant cette fonction~:
+\[
+  D(p) = \max\left\{ a-p, 0 \right\}
+\]
+On obtient facilement une représentation graphique dans le plan $(p,q)$ avec une droite de pente $-1$ et d'ordonnée à l'origine $a$.\newline
+
+\question{3} Le paramètre $a$ est le niveau maximal de l'utilité marginale, c'est donc la disponibilité maximale à payer des consommateurs pour unité de bien.\newline
+
+\question{4} Le bien est produit par une entreprise dont la fonction
+de coût est linéaire~: $C(q) = c q$, avec $c>0$. On suppose que $a>c$, autrement le marché n'existe pas. En effet les consommateurs n'accepteront jamais de payer plus que $a$ pour une unité de bien et les entreprises n'accepteront pas de vendre une unité de bien à moins de $c$ (qui représente le coût moyen et le coût marginal). À l'optimum social, le prix doit être égal au coût marginal~: $p^\star = c$. On obtient la quantité optimale en substituant dans la fonction de demande~: $q^\star = a-c$. À l'optimum social le profit des firmes est nul (car la fonction de coût est linéaire)~:
+\[
+\Pi^\star = (p^\star-c)q^\star = 0
+\]
+Le surplus des consommateurs est~:
+\[
+  \begin{split}
+    S^\star &= \int_{p^{\star}}^\infty D(p)\mathrm dp\\
+            &= \int_{c}^a (a-p)\mathrm dp\\
+            &= \frac{(a-c)^2}{2}
+  \end{split}
+\]
+Comme le profit des firmes est nul, on a aussi $W^\star=S^\star=\frac{(a-c)^2}{2}$.\newline
+
+\question{5} Si le marché est servi par une firme en situation de monopole, alors celle-ci maximise son profit en égalisant sa recette marginale et son coût marginal. Le programme du monopole est~:
+\[
+p^m = \arg\max_{\{p\}} p D(p) - cD(p)
+\]
+La CPO est~:
+\[
+\underbrace{D(p^m)+p^m D'(p^m)}_{\text{Recette marginale}} = cD'(p^m)
+\]
+Si la recette marginale est supérieure (inférieure) au coût marginal,
+alors le monopole a intérêt à proposer un prix plus élevé (faible). À
+l'optimum on a nécessairement égalisation du coût marginal et de la
+recette marginale.\newline
+
+\question{6} À l'optimum du monopole, on a~:
+\[
+a-p^m - p^m = -c
+\]
+\[
+\Leftrightarrow p^m = \frac{a+c}{2}
+\]
+Le prix optimal du monopole est la moyenne de $a$ (la disponibilité maximale à payer des consommateurs) et du prix socialement optimal. Comme par hypothèse $a>c$, on a nécessairement $p^m>c$. En substituant dans la fonction de demande, on obtient les quantités échangées~:
+\[
+q^m = a - \frac{a+c}{2} = \frac{a-c}{2}< q^\star
+\]
+la quantité échangée de bien est inférieure à l'optimum social.\newline
+
+\question{7} Déterminons le surplus des consommateurs et le profit de la
+firme dans cet environnement. On a~:
+\[
+  \begin{split}
+    S^m &= \int_{p^m}^\infty D(p)\mathrm dp\\
+            &= \int_{\frac{a+c}{2}}^a (a-p)\mathrm dp\\
+            &= \frac{(a-c)^2}{8} < S^\star
+  \end{split}
+\]
+et
+\[
+\Pi^m = (p^m-c)q^m = \left(\frac{a-c}{2}\right)^2>\Pi^\star
+\]
+Au total, le bien être social est~:
+\[
+W^m = S^m+\Pi^m = \frac{(a-c)^2}{8} + \frac{(a-c)^2}{4} = \frac{3(a-c)^2}{8}
+\]
+Clairement on a $W^m<W^\star$, la présence du monopole est socialement sous optimale~:
+\[
+W^m - W^\star = -\frac{(a-c)^2}{8}<0 
+\]
+Dans un environnement monopolistique le profit augmente, mais le
+surplus baisse plus, au total le bien être social diminue. C'est en ce
+sens que la présence du monopole est problématique~: le monopole ne
+mange pas efficacement le surplus des consommateurs.\newline
+
+\question{8} Oui si le monopole est capable de parfaitement
+discriminer par les prix en proposant un prix spécifique à chaque
+consommateur (ou pour chaque unité de bien vendue). S'il propose un
+prix égal au surplus de chaque consommateur, alors il peut absorber la
+totalité du surplus des consommateurs sans générer de perte
+sociale. Le dernier consommateur rentrant sur le marché est celui pour
+lequel la disponibilité à payer est exactement égale au coût
+marginal. Ainsi, en adoptant cette tarification, la quantité échangée
+sur le marché correspond à l'optimum social.
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

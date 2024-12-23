@@ -1,9 +1,9 @@
-all: examen-2024-2025-a.pdf
+all: examen-2024-2025-a.pdf correction-2024-2025-a.pdf
 
-examen-2024-2025-a.pdf: examen-2024-2025-a.tex
-	rubber --pdf examen-2024-2025-a
-	rubber --clean examen-2024-2025-a
+%.pdf: %.tex
+	rubber --pdf $^
+	rubber --clean $^
 	rm -rf auto
 
 clean-all:
-	rm -f examen-2024-2025-a.pdf
+	rm -f examen-2024-2025-a.pdf correction-2024-2025-a.pdf
